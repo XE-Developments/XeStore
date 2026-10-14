@@ -1,4 +1,4 @@
-const API="https://xe-store-api.example.com"; // Replace with your new Render URL
+const API="https://xe-store.onrender.com"; // Replace with your new Render URL
 const $=s=>document.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];let token=sessionStorage.getItem("xe_admin_token")||"",products=[],orders=[];
 const money=n=>new Intl.NumberFormat("en-IN",{style:"currency",currency:"INR"}).format(Number(n||0)/100);
 function esc(v){return String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}

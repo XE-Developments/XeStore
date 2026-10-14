@@ -1,4 +1,4 @@
-const API="https://xe-store-api.example.com"; // Replace with your new Render URL
+const API="https://xe-store.onrender.com"; // Replace with your new Render URL
 const $=s=>document.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)],money=n=>new Intl.NumberFormat("en-IN",{style:"currency",currency:"INR"}).format(n/100);let products=[],cart={},cat="all",query="",sort="featured",tm;
 function toast(s){$("#toast").textContent=s;$("#toast").classList.add("show");clearTimeout(tm);tm=setTimeout(()=>$("#toast").classList.remove("show"),2600)}
 function esc(v){return String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
